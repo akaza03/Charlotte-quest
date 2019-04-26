@@ -1,63 +1,27 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class BattleScene : MonoBehaviour
 {
+    private List<GameObject> playerList = new List<GameObject>();
+    private List<GameObject> enemyList = new List<GameObject>();
 
-    // Start is called before the first frame update
+    Enemy enemy = new Enemy();
     void Start()
     {
+        BattleInit();
     }
 
-    // Update is called once per frame
     void Update()
     {
-        //if (enemyHP > 0)
-        //{
-
-        //    Input.GetKeyDown(Keycode.P){
-
-        //        switch (turn)
-        //        {
-
-        //            case 1:
-
-        //                Debug.Log("apple");
-
-        //                turn++;
-
-        //                break;
-
-        //            case 2:
-
-        //                Debug.Log("Player");
-
-        //                turn++;
-
-        //                break;
-
-        //            case 3:
-
-        //                Debug.Log("max");
-
-        //                turn++
-    
-        //             break;
-
-        //            case 4:
-
-        //                Debug.Log("zombie");
-
-        //                turn = 1;
-
-        //                break;
-
-        //        }
-
-        //    }
-
-        //}
-
     }
+
+    void BattleInit()
+    {
+        //playerList.Add();
+    }
+
+
 }
