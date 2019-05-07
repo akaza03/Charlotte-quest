@@ -1,22 +1,26 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Novel;
 
-public class jokerTest : MonoBehaviour
+public class B : MonoBehaviour
 {
+    A a;
+    float pos = 0;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        a = GetComponent<A>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.A))
+        //pos = A.posX;
+        if (Input.GetKeyDown(KeyCode.A))
         {
-            NovelSingleton.StatusManager.callJoker("wide/scene9", "");
+            a.GetPos();
+            Debug.Log(A.posX);
         }
     }
 }
